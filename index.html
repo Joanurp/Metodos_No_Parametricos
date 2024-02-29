@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Evaluación de la educación Basica Secundaria a través de los Métodos No Paramétricos</title>
+  <meta name="description" content="Evaluación de la educación Basica Secundaria a través de los Métodos No Paramétricos" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Evaluación de la educación Basica Secundaria a través de los Métodos No Paramétricos" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="https://github.com/Joanurp" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Evaluación de la educación Basica Secundaria a través de los Métodos No Paramétricos" />
+  
+  
+  
+
+<meta name="author" content="Jose A. Urquijo Parra, Shirleza A. Arias Gaviria, Yuleidys M. Gutierrez" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Final Project for Nonparametric Methods</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="#caso-de-estudio---puntajes-obtenidos-de-la-prueba-icfes-calendario-a-2023"><i class="fa fa-check"></i><b>1</b> Caso de Estudio - Puntajes obtenidos de la prueba Icfes calendario A 2023</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="#procedimiento-matemático-de-la-prueba-de-chi-cuadrado"><i class="fa fa-check"></i><b>1.1</b> Procedimiento Matemático de la Prueba de Chi-Cuadrado:</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="#prueba-de-bondad-de-ajuste---chi--cuadrado"><i class="fa fa-check"></i><b>1.1.1</b> Prueba de Bondad de Ajuste - Chi- Cuadrado</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="#prueba-de-independencia"><i class="fa fa-check"></i><b>1.2</b> Prueba de Independencia</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="#prueba-de-aleatoriedad-rachas"><i class="fa fa-check"></i><b>1.3</b> Prueba de Aleatoriedad (Rachas)</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="#prueba-del-signo-s"><i class="fa fa-check"></i><b>1.4</b> Prueba del Signo (S)</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="#prueba-de-rango-signado-de-wilcoxon"><i class="fa fa-check"></i><b>1.5</b> Prueba de Rango Signado de Wilcoxon</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="#estadística-de-rangos-de-mann-whitney-wilcoxon"><i class="fa fa-check"></i><b>1.6</b> Estadística de Rangos de Mann-Whitney-Wilcoxon</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="#estimación-basada-en-la-estadística-de-wilcoxon"><i class="fa fa-check"></i><b>1.7</b> Estimación basada en la Estadística de Wilcoxon</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="#conclusiones"><i class="fa fa-check"></i><b>1.8</b> Conclusiones</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Evaluación de la educación Basica Secundaria a través de los Métodos No Paramétricos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Evaluación de la educación Basica Secundaria a través de los Métodos No Paramétricos</h1>
+<h2 class="subtitle"><em>Universidad Nacional de Colombia Sede de La Paz</em></h2>
+<p class="author"><em>Jose A. Urquijo Parra, Shirleza A. Arias Gaviria, Yuleidys M. Gutierrez</em></p>
+</div>
+<div id="caso-de-estudio---puntajes-obtenidos-de-la-prueba-icfes-calendario-a-2023" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number"> 1</span> Caso de Estudio - Puntajes obtenidos de la prueba Icfes calendario A 2023<a href="#caso-de-estudio---puntajes-obtenidos-de-la-prueba-icfes-calendario-a-2023" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>En el ámbito de la evaluación de la calidad educativa en Colombia, este proyecto se sumerge en un análisis minucioso de la educación media, enfocándose en la comparación entre los municipios de Cesar y Cundinamarca. La aplicación de métodos no paramétricos constituye la columna vertebral de nuestro enfoque, ofreciendo robustez y flexibilidad para examinar las diferencias en la calidad educativa. Este método va más allá de las métricas convencionales, permitiéndonos explorar patrones y variaciones sin imponer restricciones específicas sobre la distribución de los datos.</p>
+<p>Nos proponemos capturar la complejidad intrínseca a la educación media en contextos regionales diversos, identificando tanto áreas de excelencia como desafíos significativos. Al abordar la calidad educativa en los departamentos de Cesar y Cundinamarca, nuestro objetivo no se limita a cuantificar disparidades, sino a exponer los factores subyacentes que contribuyen a la formación de brechas educativas.</p>
+<p>Este proyecto se posiciona en la intersección de métodos no paramétricos y análisis estadístico-social, destacando las variaciones inherentes a los indicadores de calidad educativa y contextualizando estas disparidades en un marco social, económico y cultural. Aspiramos a proporcionar una visión integral y basada en evidencia, crucial para informar políticas educativas efectivas y orientadas a la equidad en el ámbito de la educación media en Colombia. Este enfoque no solo busca informar sobre inequidades educativas, sino también orientar la formulación de políticas específicas, contribuyendo al cierre de brechas y promoviendo un sistema educativo equitativo y de calidad en el contexto colombiano.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;E://Joanurpa//Base_Proyect_Rbook_Markdown//Data_Icfes_20231.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;;&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="co"># Nivel de confianza</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>nivel_confianza <span class="ot">&lt;-</span> <span class="fl">0.95</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co"># Tamaño de la población</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>tamaño_poblacion <span class="ot">&lt;-</span> <span class="fu">nrow</span>(datos)</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a><span class="co"># Tamaño necesario para la muestra usando la fórmula del muestreo aleatorio simple</span></span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>tamaño_muestra <span class="ot">&lt;-</span> <span class="fu">ceiling</span>((<span class="fl">1.96</span><span class="sc">^</span><span class="dv">2</span> <span class="sc">*</span> </span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>                             tamaño_poblacion) <span class="sc">/</span> ((<span class="fl">0.05</span>)<span class="sc">^</span><span class="dv">2</span> <span class="sc">*</span> </span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>                                                    (tamaño_poblacion <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">+</span>(<span class="fl">1.96</span><span class="sc">^</span><span class="dv">2</span>)))</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a><span class="co"># Realiza el muestreo aleatorio simple</span></span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a>muestra <span class="ot">&lt;-</span> datos[<span class="fu">sample</span>(<span class="fu">nrow</span>(datos), tamaño_muestra, <span class="at">replace =</span> <span class="cn">FALSE</span>), ]</span>
+<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" tabindex="-1"></a>datos_filtrados <span class="ot">&lt;-</span> <span class="fu">data.frame</span>( <span class="at">Puntaje_Global=</span> muestra<span class="sc">$</span>PUNT_GLOBAL,</span>
+<span id="cb1-23"><a href="#cb1-23" tabindex="-1"></a>                               <span class="at">municipios =</span> muestra<span class="sc">$</span>ESTU_MCPIO_RESIDE,</span>
+<span id="cb1-24"><a href="#cb1-24" tabindex="-1"></a>                               <span class="at">estratos =</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">D&quot;</span>, <span class="st">&quot;&quot;</span>, muestra<span class="sc">$</span>FAMI_ESTRATOVIVIENDA)),</span>
+<span id="cb1-25"><a href="#cb1-25" tabindex="-1"></a>                               <span class="at">genero =</span> muestra<span class="sc">$</span>ESTU_GENERO, </span>
+<span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a>                               <span class="at">acceso_internet=</span> muestra<span class="sc">$</span>FAMI_TIENEINTERNET,</span>
+<span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a>                               <span class="at">etnia=</span> muestra<span class="sc">$</span>ESTU_TIENEETNIA,</span>
+<span id="cb1-28"><a href="#cb1-28" tabindex="-1"></a>                               <span class="at">Puntaje_lectura =</span> muestra<span class="sc">$</span>PUNT_LECTURA_CRITICA, </span>
+<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a>                               <span class="at">puntaje_matematica =</span> muestra<span class="sc">$</span>PUNT_MATEMATICAS,</span>
+<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a>                               <span class="at">puntaje_ingles =</span> muestra<span class="sc">$</span>PUNT_INGLES,</span>
+<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a>                               <span class="at">puntaje_C_naturales =</span> muestra<span class="sc">$</span>PUNT_C_NATURALES)</span></code></pre></div>
+<p>Optamos por la aplicación de métodos no paramétricos en la evaluación de la calidad educativa en el departamento del César a través de las pruebas ICFES. La elección de estos métodos se sustenta en la ausencia de requisitos específicos o supuestos respecto a la forma de la distribución subyacente de los datos.</p>
+<p>Los métodos no paramétricos, a diferencia de los paramétricos, no presuponen una estructura particular para los datos, lo que los hace más flexibles y adecuados para situaciones en las que no se dispone de información detallada sobre la población subyacente. Al prescindir de suposiciones, evitamos posibles sesgos y aseguramos la robustez de nuestros análisis.</p>
+<p>Otro aspecto relevante es la consideración de los rangos de las observaciones en estos métodos. Al utilizar medidas de posición relativas, como los rangos, se logra una mayor resistencia ante valores atípicos o extremos, contribuyendo así a la estabilidad de los resultados. Esto es particularmente beneficioso en contextos educativos, donde la variabilidad de los datos puede ser considerable.</p>
+<p>Además, al emplear métodos no paramétricos, podemos eludir la dependencia de la distribución específica de los datos, lo que resulta crucial al enfrentarnos a situaciones en las que la normalidad u otras distribuciones paramétricas no pueden ser asumidas con certeza.</p>
+<p>En resumen, la elección de métodos no paramétricos no solo se fundamenta en su capacidad para adaptarse a diversas condiciones de los datos, sino también en su resistencia ante valores extremos y la independencia de suposiciones específicas, brindando así una aproximación más robusta y generalizable en la evaluación de la calidad educativa en el César mediante las pruebas ICFES.</p>
+<div id="procedimiento-matemático-de-la-prueba-de-chi-cuadrado" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Procedimiento Matemático de la Prueba de Chi-Cuadrado:<a href="#procedimiento-matemático-de-la-prueba-de-chi-cuadrado" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Supongamos que tenemos una muestra de datos <span class="math inline">\(X_1, X_2, ..., X_n\)</span> y queremos probar si estos datos siguen una distribución de probabilidad continua específica (por ejemplo, Chi-Cuadrado).</p>
+<p>1.Planteamos el juego de Hipotesis a verificar.
+2.Se define el nivel de significancia.
+3.Calcular la Frecuencia Esperada <span class="math inline">\(Ei\)</span>.
+4.Calcular las probabilidad correspondientes.
+5.Calcular el estadistico de prueba, el cual esta definido de la siguiente manera: $X_0^2 = <em>{i=1}^r </em>{j=1}^c X^2_{(1-),[(r-1)(c-1)]} $
+6.Contrastar la Hipotesis propuesta anteriormente.</p>
+<div id="prueba-de-bondad-de-ajuste---chi--cuadrado" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Prueba de Bondad de Ajuste - Chi- Cuadrado<a href="#prueba-de-bondad-de-ajuste---chi--cuadrado" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Se lleva a cabo la prueba de bondad de ajuste Chi-Cuadrado en este análisis, ya que no se hace ninguna suposición específica sobre la distribución de los datos, lo que hace que las pruebas paramétricas no sean apropiadas en este contexto. Además, se opta por la prueba Chi-Cuadrado en lugar de la prueba de Kolmogorov-Smirnov, debido a varias razones.</p>
+<p>En primer lugar, la prueba de Kolmogorov-Smirnov requiere la estimación de parámetros de la distribución teórica, mientras que la prueba Chi-Cuadrado no tiene este requisito, lo que la hace más flexible cuando no se conocen los parámetros subyacentes de la población.</p>
+<p>En segundo lugar, la presencia de espacios vacíos o distorsiones en los datos puede afectar la aplicabilidad de la prueba de Kolmogorov-Smirnov. La prueba Chi-Cuadrado, al ser menos sensible a estas irregularidades, resulta ser una elección más robusta en tales escenarios.</p>
+<p>Adicionalmente, la prueba de Kolmogorov-Smirnov puede ser menos adecuada cuando el tamaño de la muestra (N) es grande, superando los 40 casos, debido a que puede volverse demasiado sensible a pequeñas desviaciones. En contraste, la prueba Chi-Cuadrado tiende a ser más estable y confiable en muestras grandes.</p>
+<p><span class="math inline">\(H_0:\)</span> Los datos siguen una distribucion normal
+<span class="math inline">\(H_1:\)</span> Los datos no siguen una distriucion normal</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>puntaje_global <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>Puntaje_Global</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>media<span class="ot">&lt;-</span><span class="fu">mean</span>(puntaje_global)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Media del Puntaje Globol de estudiantes:&quot;</span>, media, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>Media del Puntaje Globol de estudiantes: 317.7031 </code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>varianza<span class="ot">&lt;-</span><span class="fu">var</span>(puntaje_global)</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Varianza del puntaje Global de Estudiantes:&quot;</span>, varianza, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>) </span></code></pre></div>
+<pre><code>Varianza del puntaje Global de Estudiantes: 2164.517 </code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>desvi<span class="ot">&lt;-</span><span class="fu">sqrt</span>(varianza)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Desviación del puntaje Global de Estudiantes:&quot;</span>, desvi, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>Desviación del puntaje Global de Estudiantes: 46.52437 </code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Probabilidades obtenidas:&quot;</span>,<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>Probabilidades obtenidas: </code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>prob<span class="ot">&lt;-</span> <span class="fu">pnorm</span>(puntaje_global, <span class="at">mean=</span>media, <span class="at">sd=</span> desvi)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a> <span class="co">#frecuen esperdas</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a> Ei<span class="ot">&lt;-</span> prob<span class="sc">*</span><span class="fu">sum</span>(puntaje_global)</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="fu">head</span>(Ei)</span></code></pre></div>
+<pre><code>[1]  73312.15 200249.24  11156.24  96444.01 382608.84 407085.43</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a> <span class="co">#estadistico de prueba</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a> KS_statistic  <span class="ot">&lt;-</span> <span class="fu">sum</span>((puntaje_global<span class="sc">-</span>Ei)<span class="sc">^</span><span class="dv">2</span><span class="sc">/</span>Ei);KS_statistic</span></code></pre></div>
+<pre><code>[1] 305796003</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a> <span class="co">#valor critico </span></span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>KS_critical <span class="ot">&lt;-</span> <span class="fu">qchisq</span>(<span class="dv">1</span><span class="fl">-0.05</span>,<span class="dv">1371-2-1</span>);KS_critical</span></code></pre></div>
+<pre><code>[1] 1455.159</code></pre>
+<p>Procedemos a constrastar la hipotesis planteada anteriormente</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="co"># Decisión</span></span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a><span class="cf">if</span> (KS_statistic <span class="sc">&gt;</span> KS_critical) {</span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Se rechaza la hipotesis nula. Hay diferencias significativas entre los puntajes obtenidos del icfes y la distribución específica, no siguen una distribucion normal&quot;</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb17-5"><a href="#cb17-5" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;No se rechaza la hipotesis nula. Los datos de los puntajes globales del icfes siguen una distribucion normal.&quot;</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>[1] &quot;Se rechaza la hipotesis nula. Hay diferencias significativas entre los puntajes obtenidos del icfes y la distribución específica, no siguen una distribucion normal&quot;</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="fu">shapiro.test</span>(puntaje_global)</span></code></pre></div>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  puntaje_global
+## W = 0.9834, p-value = 1.924e-11</code></pre>
+<p>En conclusion con una confianza del 95% como 305638826 &gt; 1455.159 rechazamos <span class="math inline">\(H_0\)</span>, por lo que se concluye que las observaciones no siguen una distribucion normal.
+Por contraste de Shapiro-Wilk concluimos que los datos no siguen una distribucion normal.</p>
+</div>
+</div>
+<div id="prueba-de-independencia" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Prueba de Independencia<a href="#prueba-de-independencia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La prueba de independencia en el contexto de métodos no paramétricos, como la prueba de Chi-Cuadrado, se utiliza para evaluar la relación entre dos variables categóricas. Es especialmente útil cuando no se asumen distribuciones específicas y no se requiere la estimación de parámetros.</p>
+<p>Al realizar la prueba de independencia, se construye una tabla de contingencia que muestra la frecuencia de ocurrencias conjuntas de las dos variables. La hipótesis nula (H0) en este caso es que las dos variables son independientes, es decir, la ocurrencia de una variable no está relacionada con la ocurrencia de la otra.</p>
+<p>En el contexto de la prueba de Chi-Cuadrado, se utiliza la estadística Chi-Cuadrado para comparar las frecuencias observadas en la tabla de contingencia con las frecuencias esperadas bajo la hipótesis nula de independencia. Si la diferencia entre las frecuencias observadas y esperadas es significativa, se rechaza la hipótesis nula, sugiriendo que hay una asociación entre las dos variables.Los pasos para poder realizar una prueba de independencia son:</p>
+<ol style="list-style-type: decimal">
+<li><p>Definir la prueba de Hipotesis pertinente al caso.</p></li>
+<li><p>Definir el <span class="math inline">\(\alpha\)</span>.</p></li>
+<li><p>Calcular el estadistico de prueba
+<span class="math display">\[X_0^2 = \sum_{i=1}^r \sum_{j=1}^c\frac{(O_{ij}-E_{ij})}{E_{ij}} \sim X^2_{(1-\alpha),[(r-1)(c-1)]} \]</span></p></li>
+</ol>
+<p>donde:</p>
+<p>r = numero de filas</p>
+<p>c = numero de columnas</p>
+<p>(r-1)(c-1) grados de libertad</p>
+<p><span class="math inline">\(E_{ij}\)</span> Esperados de la distribucion</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Se define la regla de decision.</li>
+</ol>
+<p>Se rechaza H_0 si <span class="math inline">\(X_i^2 \geq X^2_{(1-\alpha)},[(r-1)(c-1)]\)</span></p>
+<p><span class="math inline">\(H_0\)</span>: Los valores no se asocian (independientes)
+<span class="math inline">\(H_1\)</span>: Los valores se asocian (dependientes)</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a>tabla <span class="ot">&lt;-</span> datos_filtrados <span class="sc">%&gt;%</span></span>
+<span id="cb21-3"><a href="#cb21-3" tabindex="-1"></a>  <span class="fu">group_by</span>(etnia, acceso_internet) <span class="sc">%&gt;%</span></span>
+<span id="cb21-4"><a href="#cb21-4" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">&#39;drop&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb21-5"><a href="#cb21-5" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proporcion =</span> count<span class="sc">/</span><span class="fu">sum</span>(count));tabla</span></code></pre></div>
+<pre><code># A tibble: 6 × 4
+  etnia acceso_internet count proporcion
+  &lt;chr&gt; &lt;chr&gt;           &lt;int&gt;      &lt;dbl&gt;
+1 &quot;&quot;    &quot;Si&quot;                1   0.000729
+2 &quot;No&quot;  &quot;&quot;                 80   0.0584  
+3 &quot;No&quot;  &quot;No&quot;               17   0.0124  
+4 &quot;No&quot;  &quot;Si&quot;             1266   0.923   
+5 &quot;Si&quot;  &quot;&quot;                  2   0.00146 
+6 &quot;Si&quot;  &quot;Si&quot;                5   0.00365 </code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a>C<span class="ot">=</span><span class="dv">2</span></span>
+<span id="cb23-2"><a href="#cb23-2" tabindex="-1"></a>R<span class="ot">=</span><span class="dv">6</span></span>
+<span id="cb23-3"><a href="#cb23-3" tabindex="-1"></a>X<span class="ot">&lt;-</span>((R<span class="dv">-1</span>)<span class="sc">*</span>(C<span class="dv">-1</span>))</span>
+<span id="cb23-4"><a href="#cb23-4" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" tabindex="-1"></a>Etnia <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>etnia</span>
+<span id="cb23-6"><a href="#cb23-6" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" tabindex="-1"></a>indepen<span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Acceso_internet =</span> datos_filtrados<span class="sc">$</span>acceso_internet,</span>
+<span id="cb23-8"><a href="#cb23-8" tabindex="-1"></a><span class="at">Etnia =</span> datos_filtrados<span class="sc">$</span>etnia)</span>
+<span id="cb23-9"><a href="#cb23-9" tabindex="-1"></a></span>
+<span id="cb23-10"><a href="#cb23-10" tabindex="-1"></a></span>
+<span id="cb23-11"><a href="#cb23-11" tabindex="-1"></a>indepen<span class="sc">%&gt;%</span><span class="fu">head</span>()<span class="sc">%&gt;%</span><span class="fu">kable</span>()</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Acceso_internet</th>
+<th align="left">Etnia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Si</td>
+<td align="left">No</td>
+</tr>
+<tr class="even">
+<td align="left">Si</td>
+<td align="left">No</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">No</td>
+</tr>
+<tr class="even">
+<td align="left">Si</td>
+<td align="left">No</td>
+</tr>
+<tr class="odd">
+<td align="left">Si</td>
+<td align="left">No</td>
+</tr>
+<tr class="even">
+<td align="left">Si</td>
+<td align="left">No</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(<span class="fu">table</span>(<span class="at">Acceso_internet =</span> datos_filtrados<span class="sc">$</span>acceso_internet,</span>
+<span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a><span class="at">Etnia =</span> datos_filtrados<span class="sc">$</span>etnia));result</span></code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  table(Acceso_internet = datos_filtrados$acceso_internet, Etnia = datos_filtrados$etnia)
+X-squared = 6.5118, df = 4, p-value = 0.164</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a>tabulado<span class="ot">&lt;-</span> <span class="fu">qchisq</span>(<span class="dv">1</span><span class="fl">-0.05</span>,X);tabulado</span></code></pre></div>
+<pre><code>[1] 11.0705</code></pre>
+<p>No rechazamos <span class="math inline">\(H_0\)</span>, podemos decir que las variables “ESTU_TIENEETNIA” y “FAMI_TIENEINTERNET” no se asocian entre si(independientes), teniendo 11.0705 &lt; 24.342.</p>
+</div>
+<div id="prueba-de-aleatoriedad-rachas" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Prueba de Aleatoriedad (Rachas)<a href="#prueba-de-aleatoriedad-rachas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En esta prueba, se examina la secuencia de datos y se cuentan las rachas, que son secuencias consecutivas de observaciones que comparten la misma dirección (creciente o decreciente). La hipótesis nula (H0) es que las rachas ocurren de manera aleatoria, lo que implica que no hay patrones discernibles en los datos.</p>
+<p><span class="math inline">\(H_0\)</span>: Los datos exhiben aleatoridad</p>
+<p><span class="math inline">\(H_1\)</span>:Los datos no exhiben aleatoriedad</p>
+<p>Paso 1: Definir la secuencia binaria (1 para éxitos, 0 para fracasos)</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a>puntaje_global <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>Puntaje_Global</span>
+<span id="cb28-2"><a href="#cb28-2" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" tabindex="-1"></a>vec<span class="ot">&lt;-</span> <span class="fu">c</span>(puntaje_global)</span>
+<span id="cb28-4"><a href="#cb28-4" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" tabindex="-1"></a><span class="fu">runs.test</span>(vec)</span></code></pre></div>
+<pre><code>
+    Runs Test
+
+data:  vec
+statistic = -0.43362, runs = 674, n1 = 682, n2 = 680, n = 1362, p-value
+= 0.6646
+alternative hypothesis: nonrandomness</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a>mediana <span class="ot">&lt;-</span> <span class="fu">median</span>(vec);mediana</span></code></pre></div>
+<pre><code>[1] 324</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" tabindex="-1"></a>media<span class="ot">&lt;-</span> <span class="fu">mean</span>(vec);media</span></code></pre></div>
+<pre><code>[1] 317.7031</code></pre>
+<p>Paso 2: Definir rachas</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a>vec<span class="ot">&lt;-</span> vec[vec <span class="sc">!=</span> mediana]</span>
+<span id="cb34-2"><a href="#cb34-2" tabindex="-1"></a>vec<span class="ot">&lt;-</span><span class="fu">ifelse</span>(vec<span class="sc">&gt;</span>mediana,<span class="dv">1</span>,<span class="dv">0</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="#cb34-4" tabindex="-1"></a>vec<span class="sc">%&gt;%</span><span class="fu">head</span>()<span class="sc">%&gt;%</span><span class="fu">kable</span>()</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a> <span class="co">#contar rachas </span></span>
+<span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a> <span class="co"># Calcular las rachas</span></span>
+<span id="cb35-3"><a href="#cb35-3" tabindex="-1"></a> rachas <span class="ot">&lt;-</span> <span class="fu">rle</span>(vec)</span>
+<span id="cb35-4"><a href="#cb35-4" tabindex="-1"></a> <span class="co"># Contar las rachas</span></span>
+<span id="cb35-5"><a href="#cb35-5" tabindex="-1"></a> rachas <span class="ot">&lt;-</span> <span class="fu">length</span>(rachas<span class="sc">$</span>lengths)</span>
+<span id="cb35-6"><a href="#cb35-6" tabindex="-1"></a> <span class="fu">cat</span>(<span class="st">&quot;el valor de la racha:&quot;</span>,rachas,<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>el valor de la racha: 674 </code></pre>
+<p>Paso 3: Calcular esperado y varianza</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a><span class="co">#valores iguales 1</span></span>
+<span id="cb37-2"><a href="#cb37-2" tabindex="-1"></a>m<span class="ot">&lt;-</span><span class="fu">sum</span>(vec<span class="sc">==</span><span class="dv">1</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" tabindex="-1"></a><span class="co"># valores iguales 0</span></span>
+<span id="cb37-4"><a href="#cb37-4" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="fu">sum</span>(vec <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb37-6"><a href="#cb37-6" tabindex="-1"></a>N<span class="ot">&lt;-</span> m<span class="sc">+</span>n</span>
+<span id="cb37-7"><a href="#cb37-7" tabindex="-1"></a>espe <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span>(<span class="dv">2</span><span class="sc">*</span>m<span class="sc">*</span>n)<span class="sc">/</span>(m<span class="sc">+</span>n);espe</span></code></pre></div>
+<pre><code>[1] 681.9985</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a>vari <span class="ot">&lt;-</span> (<span class="dv">2</span><span class="sc">*</span>m<span class="sc">*</span>n)<span class="sc">*</span>(<span class="dv">2</span><span class="sc">*</span>m<span class="sc">*</span>n <span class="sc">-</span> m<span class="sc">-</span>n)<span class="sc">/</span>((m<span class="sc">+</span>n)<span class="sc">^</span><span class="dv">2</span> <span class="sc">*</span> (m<span class="sc">+</span>n<span class="dv">-1</span>));vari</span></code></pre></div>
+<pre><code>[1] 340.2483</code></pre>
+<p>Paso 4: Calcular el valor estadistico</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a>w<span class="ot">&lt;-</span> (rachas<span class="sc">-</span>espe)<span class="sc">/</span><span class="fu">sqrt</span>(vari); w</span></code></pre></div>
+<pre><code>[1] -0.4336229</code></pre>
+<p>Paso 5: Tabular a dos colas por como esta construido el juego de hipotesis</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a>alpha<span class="ot">&lt;-</span><span class="fl">0.05</span></span>
+<span id="cb43-2"><a href="#cb43-2" tabindex="-1"></a>Z_alpha_med<span class="ot">&lt;-</span><span class="fu">qnorm</span>(<span class="dv">1</span><span class="sc">-</span>alpha<span class="sc">/</span><span class="dv">2</span>);Z_alpha_med</span></code></pre></div>
+<pre><code>[1] 1.959964</code></pre>
+<p>Paso 6: Contrastamos la hipotesis establecida anteriormente.</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a><span class="cf">if</span> (w <span class="sc">&gt;=</span> Z_alpha_med){</span>
+<span id="cb45-2"><a href="#cb45-2" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Rechazas H_0&quot;</span>)</span>
+<span id="cb45-3"><a href="#cb45-3" tabindex="-1"></a>} <span class="cf">else</span>{</span>
+<span id="cb45-4"><a href="#cb45-4" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;No Rechazas H_0&quot;</span>)</span>
+<span id="cb45-5"><a href="#cb45-5" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>[1] &quot;No Rechazas H_0&quot;</code></pre>
+<p>No rechazamos <span class="math inline">\(H_0\)</span>, debido a que tenemos 1.307025 &lt; 1.959, por lo que podemos decir que podemos concluir con una confianza del 95%, que los datos presentan aleatoriedad.</p>
+</div>
+<div id="prueba-del-signo-s" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Prueba del Signo (S)<a href="#prueba-del-signo-s" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Optamos por utilizar la prueba del signo para evaluar la igualdad entre la mediana propuesta y la mediana real de la muestra. La elección de esta prueba se fundamenta en su capacidad para realizar comparaciones de ubicación sin hacer suposiciones específicas sobre la forma de la distribución de los datos.</p>
+<p>La prueba del signo se basa en la diferencia entre las observaciones y la mediana propuesta, considerando solo el signo de estas diferencias. Este enfoque no paramétrico es particularmente adecuado cuando no se pueden hacer suposiciones sobre la distribución subyacente de los datos y se busca evaluar la posición central de la muestra.</p>
+<p>Al no requerir supuestos sobre la normalidad de los datos, la prueba del signo se convierte en una herramienta valiosa en situaciones donde la información sobre la mediana es más relevante que medidas de tendencia más robustas a la distribución, como la media. Además, su aplicabilidad se extiende a muestras pequeñas o datos que pueden no seguir una distribución paramétrica. El juego de hipotesis es el siguiente:</p>
+<p><span class="math display">\[H_0: \theta=323\]</span></p>
+<p><span class="math display">\[H_1:\theta\neq323\]</span></p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a>muestra_datos <span class="ot">&lt;-</span> puntaje_global</span>
+<span id="cb47-2"><a href="#cb47-2" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="#cb47-3" tabindex="-1"></a>mediana<span class="ot">&lt;-</span><span class="fu">median</span>(puntaje_global);mediana</span></code></pre></div>
+<pre><code>[1] 324</code></pre>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a><span class="co"># Valor de referencia (usualmente cero en la prueba del signo)</span></span>
+<span id="cb49-2"><a href="#cb49-2" tabindex="-1"></a>valor_referencia <span class="ot">&lt;-</span> <span class="dv">323</span></span>
+<span id="cb49-3"><a href="#cb49-3" tabindex="-1"></a></span>
+<span id="cb49-4"><a href="#cb49-4" tabindex="-1"></a><span class="co"># Calcular el número de observaciones</span></span>
+<span id="cb49-5"><a href="#cb49-5" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(muestra_datos)</span>
+<span id="cb49-6"><a href="#cb49-6" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Número de observaciones:&quot;</span>, n, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>Número de observaciones: 1371 </code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a><span class="co"># Calcular las diferencias entre las observaciones y el valor de referencia</span></span>
+<span id="cb51-2"><a href="#cb51-2" tabindex="-1"></a>diferencias <span class="ot">&lt;-</span> muestra_datos <span class="sc">-</span> valor_referencia</span>
+<span id="cb51-3"><a href="#cb51-3" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" tabindex="-1"></a>diferencias<span class="sc">%&gt;%</span><span class="fu">head</span>()<span class="sc">%&gt;%</span><span class="fu">kable</span>()</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">-50</td>
+</tr>
+<tr class="even">
+<td align="right">-10</td>
+</tr>
+<tr class="odd">
+<td align="right">-96</td>
+</tr>
+<tr class="even">
+<td align="right">-41</td>
+</tr>
+<tr class="odd">
+<td align="right">49</td>
+</tr>
+<tr class="even">
+<td align="right">65</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a><span class="co"># Contar el número de diferencias positivas y negativas</span></span>
+<span id="cb52-2"><a href="#cb52-2" tabindex="-1"></a>n_positivas <span class="ot">&lt;-</span> <span class="fu">sum</span>(diferencias <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb52-3"><a href="#cb52-3" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Diferencias positivas:&quot;</span>, n_positivas, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>Diferencias positivas: 691 </code></pre>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a>n_negativas <span class="ot">&lt;-</span> <span class="fu">sum</span>(diferencias <span class="sc">&lt;</span> <span class="dv">0</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Diferencias negativas:&quot;</span>, n_negativas, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>Diferencias negativas: 666 </code></pre>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" tabindex="-1"></a><span class="co"># Calcular el número mínimo de diferencias positivas y negativas</span></span>
+<span id="cb56-2"><a href="#cb56-2" tabindex="-1"></a>n_min <span class="ot">&lt;-</span> <span class="fu">min</span>(n_positivas, n_negativas)</span>
+<span id="cb56-3"><a href="#cb56-3" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Número mínimo de diferencias:&quot;</span>, n_min, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>Número mínimo de diferencias: 666 </code></pre>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" tabindex="-1"></a><span class="co"># Calcular el estadístico de prueba </span></span>
+<span id="cb58-2"><a href="#cb58-2" tabindex="-1"></a>probabilidad <span class="ot">&lt;-</span> <span class="fu">pbinom</span>(n_min,n,<span class="fl">0.5</span>); probabilidad</span></code></pre></div>
+<pre><code>[1] 0.1523796</code></pre>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" tabindex="-1"></a>t <span class="ot">&lt;-</span> alpha<span class="sc">/</span><span class="dv">2</span>; t</span></code></pre></div>
+<pre><code>[1] 0.025</code></pre>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" tabindex="-1"></a><span class="cf">if</span> (probabilidad <span class="sc">&lt;=</span> t){</span>
+<span id="cb62-2"><a href="#cb62-2" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Se rechaza H_0&quot;</span>)</span>
+<span id="cb62-3"><a href="#cb62-3" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb62-4"><a href="#cb62-4" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;No se rechaza H_0&quot;</span>)</span>
+<span id="cb62-5"><a href="#cb62-5" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>[1] &quot;No se rechaza H_0&quot;</code></pre>
+<p>No se rechaza <span class="math inline">\(H_0\)</span>, concluyendo que no hay suficiente evidencia para determinar que la mediana del puntaje global obtenido por los estudiantes que presentaron la prueba es diferente a 323.</p>
+</div>
+<div id="prueba-de-rango-signado-de-wilcoxon" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Prueba de Rango Signado de Wilcoxon<a href="#prueba-de-rango-signado-de-wilcoxon" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En la prueba de rango signado de Wilcoxon, se comparan las diferencias individuales entre las observaciones emparejadas, asignándoles un rango según su magnitud y considerando el signo de cada diferencia. La suma de los rangos positivos y negativos se utiliza para evaluar si las diferencias son, en promedio, diferentes de cero. La prueba de hipotesis planteada es la siguiente:</p>
+<p><span class="math display">\[H_0:\theta_o=\theta_D\]</span>
+<span class="math display">\[H_1:\theta_o\neq\theta_D\]</span>
+Los pasos para realizar una prueba de Rango signado de Wilcoxon:</p>
+<p>Paso 1: Calcular las diferencias entre las observaciones</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" tabindex="-1"></a>despues <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>puntaje_matematica</span>
+<span id="cb64-2"><a href="#cb64-2" tabindex="-1"></a></span>
+<span id="cb64-3"><a href="#cb64-3" tabindex="-1"></a>antes <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>Puntaje_lectura</span>
+<span id="cb64-4"><a href="#cb64-4" tabindex="-1"></a></span>
+<span id="cb64-5"><a href="#cb64-5" tabindex="-1"></a><span class="co"># Calcular las diferencias entre las muestras después - antes</span></span>
+<span id="cb64-6"><a href="#cb64-6" tabindex="-1"></a>diferencias <span class="ot">&lt;-</span> despues <span class="sc">-</span> antes; <span class="fu">head</span>(diferencias)</span></code></pre></div>
+<pre><code>[1] -2  2  6 -2 10  3</code></pre>
+<p>Paso 2: Eliminar las diferencias iguales a cero (opcional)</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" tabindex="-1"></a><span class="co"># Eliminar las diferencias iguales a cero</span></span>
+<span id="cb66-2"><a href="#cb66-2" tabindex="-1"></a>diferencias <span class="ot">&lt;-</span> diferencias[diferencias <span class="sc">!=</span> <span class="dv">0</span>]</span></code></pre></div>
+<p>Paso 3: Asignar rangos a los valores absolutos de las diferencias</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" tabindex="-1"></a><span class="co"># Calcular los rangos de los valores absolutos de las diferencias</span></span>
+<span id="cb67-2"><a href="#cb67-2" tabindex="-1"></a>rangos <span class="ot">&lt;-</span> <span class="fu">rank</span>(<span class="fu">abs</span>(diferencias))</span>
+<span id="cb67-3"><a href="#cb67-3" tabindex="-1"></a></span>
+<span id="cb67-4"><a href="#cb67-4" tabindex="-1"></a>rangos<span class="sc">%&gt;%</span><span class="fu">head</span>()<span class="sc">%&gt;%</span><span class="fu">kable</span>()</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">216.0</td>
+</tr>
+<tr class="even">
+<td align="right">216.0</td>
+</tr>
+<tr class="odd">
+<td align="right">725.0</td>
+</tr>
+<tr class="even">
+<td align="right">216.0</td>
+</tr>
+<tr class="odd">
+<td align="right">1025.5</td>
+</tr>
+<tr class="even">
+<td align="right">360.5</td>
+</tr>
+</tbody>
+</table>
+<p>Paso 4: Separar los rangos según el signo de las diferencias</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" tabindex="-1"></a><span class="co"># Dividir los rangos en positivos y negativos</span></span>
+<span id="cb68-2"><a href="#cb68-2" tabindex="-1"></a></span>
+<span id="cb68-3"><a href="#cb68-3" tabindex="-1"></a>rangos_positivos <span class="ot">&lt;-</span> rangos[diferencias <span class="sc">&gt;</span> <span class="dv">0</span>];<span class="fu">head</span>(rangos_positivos)</span></code></pre></div>
+<pre><code>[1]  216.0  725.0 1025.5  360.5  360.5  216.0</code></pre>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" tabindex="-1"></a>rangos_negativos <span class="ot">&lt;-</span> rangos[diferencias <span class="sc">&lt;</span> <span class="dv">0</span>];<span class="fu">head</span>(rangos_negativos)</span></code></pre></div>
+<pre><code>[1]  216.0  216.0 1025.5   73.0  618.0  360.5</code></pre>
+<p>Paso 5: Calcular la suma de los rangos para los valores positivos y negativos</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" tabindex="-1"></a><span class="co"># Sumar los rangos para los valores positivos y negativos</span></span>
+<span id="cb72-2"><a href="#cb72-2" tabindex="-1"></a>suma_rangos_positivos <span class="ot">&lt;-</span> <span class="fu">sum</span>(rangos_positivos);suma_rangos_positivos</span></code></pre></div>
+<pre><code>[1] 373060</code></pre>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" tabindex="-1"></a>suma_rangos_negativos <span class="ot">&lt;-</span> <span class="fu">sum</span>(rangos_negativos);suma_rangos_negativos</span></code></pre></div>
+<pre><code>[1] 453195</code></pre>
+<p>Paso 6: Calcular la estadística T para la prueba de rango signado de Wilcoxon</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" tabindex="-1"></a><span class="co"># Calcular la estadística T para la prueba</span></span>
+<span id="cb76-2"><a href="#cb76-2" tabindex="-1"></a>T <span class="ot">&lt;-</span> <span class="fu">min</span>(suma_rangos_positivos, suma_rangos_negativos);T</span></code></pre></div>
+<pre><code>[1] 373060</code></pre>
+<p>Paso 7: Calcular el número de pares de datos</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" tabindex="-1"></a><span class="co"># Calcular el número de pares de datos</span></span>
+<span id="cb78-2"><a href="#cb78-2" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(diferencias);n</span></code></pre></div>
+<pre><code>[1] 1285</code></pre>
+<p>Paso 8: Calcular el estadístico Z para la prueba</p>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" tabindex="-1"></a><span class="co"># Calcular el estadístico Z</span></span>
+<span id="cb80-2"><a href="#cb80-2" tabindex="-1"></a>Z <span class="ot">&lt;-</span> (T <span class="sc">-</span> n <span class="sc">*</span> (n <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">/</span> <span class="dv">4</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(n <span class="sc">*</span> (n <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">*</span> (<span class="dv">2</span> <span class="sc">*</span> n <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">/</span> <span class="dv">24</span>);<span class="fu">abs</span>(Z)</span></code></pre></div>
+<pre><code>[1] 3.011444</code></pre>
+<p>Paso 9: Calcular el valor p bilateral usando la distribución normal</p>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" tabindex="-1"></a><span class="co"># Calcular el valor p bilateral usando la distribución normal estándar</span></span>
+<span id="cb82-2"><a href="#cb82-2" tabindex="-1"></a>p_valor1 <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(Z));p_valor1</span></code></pre></div>
+<pre><code>[1] 1.9974</code></pre>
+<p>Comparando con el wilcoxon.test</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" tabindex="-1"></a><span class="fu">wilcox.test</span>(diferencias)</span></code></pre></div>
+<pre><code>## 
+##  Wilcoxon signed rank test with continuity correction
+## 
+## data:  diferencias
+## V = 373060, p-value = 0.002577
+## alternative hypothesis: true location is not equal to 0</code></pre>
+<p>Dado que el valor absoluto del estadístico calculado T es mayor que el alpha establecido se rechaza <span class="math inline">\(H_O\)</span>, Por lo tanto hay diferencias significativas entre los puntajes obtenidos de las pruebas de matemática y lectura critica.</p>
+</div>
+<div id="estadística-de-rangos-de-mann-whitney-wilcoxon" class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> Estadística de Rangos de Mann-Whitney-Wilcoxon<a href="#estadística-de-rangos-de-mann-whitney-wilcoxon" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La estadística de rangos de Mann-Whitney-Wilcoxon sirve para comparar dos grupos independientes, se emplea un método no paramétrico que permite evaluar diferencias significativas sin hacer suposiciones específicas sobre la distribución de los datos, proporcionando así un enfoque flexible y robusto en análisis comparativos.La prueba de hipotesis planteada es la siguiente:</p>
+<p><span class="math display">\[H_0:\theta_1=\theta_2\]</span>
+<span class="math display">\[H_1:\theta_1\neq\theta_2\]</span></p>
+<p>Paso 1: Combinar los datos y asignar rangos</p>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" tabindex="-1"></a><span class="co"># Combina los datos de ambos grupos</span></span>
+<span id="cb86-2"><a href="#cb86-2" tabindex="-1"></a>grupo1 <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>estratos</span>
+<span id="cb86-3"><a href="#cb86-3" tabindex="-1"></a>grupo2 <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>Puntaje_Global</span>
+<span id="cb86-4"><a href="#cb86-4" tabindex="-1"></a></span>
+<span id="cb86-5"><a href="#cb86-5" tabindex="-1"></a>datos_combinados <span class="ot">&lt;-</span> <span class="fu">c</span>(datos_filtrados<span class="sc">$</span>estratos, datos_filtrados<span class="sc">$</span>Puntaje_Global)</span>
+<span id="cb86-6"><a href="#cb86-6" tabindex="-1"></a></span>
+<span id="cb86-7"><a href="#cb86-7" tabindex="-1"></a><span class="co"># Calcula los rangos de los datos combinados</span></span>
+<span id="cb86-8"><a href="#cb86-8" tabindex="-1"></a>rangos <span class="ot">&lt;-</span> <span class="fu">rank</span>(datos_combinados)</span>
+<span id="cb86-9"><a href="#cb86-9" tabindex="-1"></a></span>
+<span id="cb86-10"><a href="#cb86-10" tabindex="-1"></a>rangos<span class="sc">%&gt;%</span><span class="fu">head</span>()<span class="sc">%&gt;%</span><span class="fu">kable</span>()</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">290</td>
+</tr>
+<tr class="even">
+<td align="right">572</td>
+</tr>
+<tr class="odd">
+<td align="right">2638</td>
+</tr>
+<tr class="even">
+<td align="right">857</td>
+</tr>
+<tr class="odd">
+<td align="right">1134</td>
+</tr>
+<tr class="even">
+<td align="right">572</td>
+</tr>
+</tbody>
+</table>
+<p>Paso 2: Calcular la suma de rangos para cada grupo</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" tabindex="-1"></a><span class="co"># Suma los rangos para cada grupo</span></span>
+<span id="cb87-2"><a href="#cb87-2" tabindex="-1"></a>suma_rangos_grupo1 <span class="ot">&lt;-</span> <span class="fu">sum</span>(rangos[<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(grupo1)])</span>
+<span id="cb87-3"><a href="#cb87-3" tabindex="-1"></a>suma_rangos_grupo2 <span class="ot">&lt;-</span> <span class="fu">sum</span>(rangos[(<span class="fu">length</span>(grupo1) <span class="sc">+</span> <span class="dv">1</span>)<span class="sc">:</span><span class="fu">length</span>(datos_combinados)])</span></code></pre></div>
+<p>Paso 3: Calcular la estadística U para cada grupo</p>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" tabindex="-1"></a><span class="co"># Calcula la estadística U para cada grupo</span></span>
+<span id="cb88-2"><a href="#cb88-2" tabindex="-1"></a>U_grupo1 <span class="ot">&lt;-</span> (suma_rangos_grupo1 <span class="sc">-</span> (<span class="fu">length</span>(grupo1) <span class="sc">*</span> (<span class="fu">length</span>(grupo1) <span class="sc">+</span> <span class="dv">1</span>)) <span class="sc">/</span> <span class="dv">2</span>);U_grupo1</span></code></pre></div>
+<pre><code>[1] 143955</code></pre>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" tabindex="-1"></a>U_grupo2 <span class="ot">&lt;-</span> (suma_rangos_grupo2 <span class="sc">-</span> (<span class="fu">length</span>(grupo2) <span class="sc">*</span> (<span class="fu">length</span>(grupo2) <span class="sc">+</span> <span class="dv">1</span>)) <span class="sc">/</span> <span class="dv">2</span>);U_grupo2</span></code></pre></div>
+<pre><code>[1] 1735686</code></pre>
+<p>Paso 4: Calcular la estadística U de Mann-Whitney-Wilcoxon (la menor de U1 y U2)</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" tabindex="-1"></a><span class="co"># Calcula la estadística U de Mann-Whitney-Wilcoxon</span></span>
+<span id="cb92-2"><a href="#cb92-2" tabindex="-1"></a>U <span class="ot">&lt;-</span> <span class="fu">min</span>(U_grupo1, U_grupo2);U</span></code></pre></div>
+<pre><code>[1] 143955</code></pre>
+<p>Paso 5: Calcular el estadístico Z para la prueba</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" tabindex="-1"></a><span class="co"># Calcula el estadístico Z</span></span>
+<span id="cb94-2"><a href="#cb94-2" tabindex="-1"></a>n1 <span class="ot">&lt;-</span> <span class="fu">length</span>(grupo1);n1</span></code></pre></div>
+<pre><code>[1] 1371</code></pre>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" tabindex="-1"></a>n2 <span class="ot">&lt;-</span> <span class="fu">length</span>(grupo2);n2</span></code></pre></div>
+<pre><code>[1] 1371</code></pre>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" tabindex="-1"></a>Z <span class="ot">&lt;-</span> <span class="fu">abs</span> (((U <span class="sc">-</span> (n1 <span class="sc">*</span> n2 <span class="sc">/</span> <span class="dv">2</span>))) <span class="sc">/</span> (<span class="fu">sqrt</span>((n1 <span class="sc">*</span> n2) <span class="sc">*</span> (n1 <span class="sc">+</span> n2 <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">/</span> <span class="dv">12</span>)));Z</span></code></pre></div>
+<pre><code>[1] 38.39547</code></pre>
+<p>Dado que el Estadístico obtenido es mayor que la p-valor establecido se rechaza <span class="math inline">\(H_0\)</span>, por tanto no hay suficiente evidencia para afirmar que las diferencias entre los estratos de los estudiantes y los puntajes obtenidos de los mismos, son iguales.</p>
+</div>
+<div id="estimación-basada-en-la-estadística-de-wilcoxon" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Estimación basada en la Estadística de Wilcoxon<a href="#estimación-basada-en-la-estadística-de-wilcoxon" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La Estadística de Wilcoxon se centra en las diferencias entre pares de observaciones emparejadas y evalúa si estas diferencias tienen una distribución simétrica en torno a cero. Al calcular la mediana de estas diferencias, se obtiene una medida que es menos sensible a valores extremos o no normales que la media, siendo una alternativa apropiada para realizar estimaciones en contextos donde la normalidad no puede asumirse con certeza.La prueba de hipotesis planteada es la siguiente:</p>
+<p><span class="math display">\[H_0:\theta_1=\theta_2\]</span></p>
+<p><span class="math display">\[H_1:\theta_1\neq\theta_2\]</span></p>
+<p>Paso 1: Calcular las diferencias entre las observaciones de los dos grupos.</p>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" tabindex="-1"></a>grupo1 <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>puntaje_ingles</span>
+<span id="cb100-2"><a href="#cb100-2" tabindex="-1"></a>grupo2 <span class="ot">&lt;-</span> datos_filtrados<span class="sc">$</span>puntaje_C_naturales</span>
+<span id="cb100-3"><a href="#cb100-3" tabindex="-1"></a></span>
+<span id="cb100-4"><a href="#cb100-4" tabindex="-1"></a><span class="co"># Calcular las diferencias entre las observaciones de los dos grupos</span></span>
+<span id="cb100-5"><a href="#cb100-5" tabindex="-1"></a></span>
+<span id="cb100-6"><a href="#cb100-6" tabindex="-1"></a>diferencias <span class="ot">&lt;-</span> grupo1 <span class="sc">-</span> grupo2</span>
+<span id="cb100-7"><a href="#cb100-7" tabindex="-1"></a><span class="fu">head</span>(diferencias)</span></code></pre></div>
+<pre><code>[1] 10 15  3  1 10 26</code></pre>
+<p>Paso 2: Calcular la mediana de las diferencias.</p>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" tabindex="-1"></a><span class="co"># Calcular la mediana de las diferencias</span></span>
+<span id="cb102-2"><a href="#cb102-2" tabindex="-1"></a>mediana_diferencias <span class="ot">&lt;-</span> <span class="fu">median</span>(diferencias)</span></code></pre></div>
+<p>Paso 3: Obtener un intervalo de confianza para la mediana (opcional).</p>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" tabindex="-1"></a><span class="co"># Calcular el tamaño del intervalo de confianza</span></span>
+<span id="cb103-2"><a href="#cb103-2" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span> <span class="co"># nivel de confianza del 95%</span></span>
+<span id="cb103-3"><a href="#cb103-3" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(diferencias)</span>
+<span id="cb103-4"><a href="#cb103-4" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">qnorm</span>(<span class="dv">1</span> <span class="sc">-</span> alpha <span class="sc">/</span> <span class="dv">2</span>);Z</span></code></pre></div>
+<pre><code>[1] 38.39547</code></pre>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" tabindex="-1"></a><span class="co"># Calcular el error estándar de la mediana</span></span>
+<span id="cb105-2"><a href="#cb105-2" tabindex="-1"></a>se_mediana <span class="ot">&lt;-</span> <span class="fu">sqrt</span>((<span class="dv">1</span> <span class="sc">/</span> (<span class="dv">4</span> <span class="sc">*</span> n)) <span class="sc">*</span> <span class="fu">sum</span>((pi <span class="sc">*</span> (diferencias <span class="sc">-</span> mediana_diferencias)) <span class="sc">^</span> <span class="dv">2</span>));se_mediana</span></code></pre></div>
+<pre><code>[1] 17.03408</code></pre>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" tabindex="-1"></a><span class="co"># Calcular los límites del intervalo de confianza para la mediana</span></span>
+<span id="cb107-2"><a href="#cb107-2" tabindex="-1"></a>limite_inferior <span class="ot">&lt;-</span> mediana_diferencias <span class="sc">-</span> z <span class="sc">*</span> se_mediana</span>
+<span id="cb107-3"><a href="#cb107-3" tabindex="-1"></a>limite_superior <span class="ot">&lt;-</span> mediana_diferencias <span class="sc">+</span> z <span class="sc">*</span> se_mediana</span>
+<span id="cb107-4"><a href="#cb107-4" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Intervalo de Confianza para la Mediana:&quot;</span>, limite_inferior, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>, limite_superior)</span></code></pre></div>
+<pre><code>Intervalo de Confianza para la Mediana: -21.38618 
+ 45.38618</code></pre>
+</div>
+<div id="conclusiones" class="section level2 hasAnchor" number="1.8">
+<h2><span class="header-section-number">1.8</span> Conclusiones<a href="#conclusiones" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>De acuerdo a los diferentes métodos aplicados a través de la Estadistica No paramétrica podemos observar que ciertos factores influyen considerablemente en los puntajes obtenidos por los estudiantes en las pruebas icfes aplicadas en año anterior 2023. Podemos mecionar que existe un brecha social que caracteriza esta problematica arraigada a condiciones poco favorables que eximen de preveer una mejor preparación frente a este reto que supone expectativas para la formación profesionla e integral en la sociedad.</p>
+<p>Un caso particular que hemos identifcado, surge de poblaciones etnicas y estudiantes sin acceso a internet; estan relacionadas considerablemente con los puntajes obtenidos en las pruebas. El acceso a internet y el lugar de risendecia, en particular aquellos que no se encuetran en zonas urbanas son factores que afectan considerablemente la calidad educativa en colombia.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Proyecto de Prueba Rmarkdown.pdf", "Proyecto de Prueba Rmarkdown.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
